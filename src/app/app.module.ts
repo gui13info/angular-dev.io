@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from "@angular/common/http";
 import { APP_BASE_HREF, registerLocaleData } from '@angular/common';
-import localPt from '@angular/common/locales/pt';
+import localePt from '@angular/common/locales/pt';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -17,7 +17,7 @@ import { BindingComponent } from './demos/binding/binding.component';
 import { ProdutoService } from './produtos/produtos.service';
 import { ListaProdutoComponent } from './produtos/lista-produto/lista-produto.component';
 
-registerLocaleData(localPt);
+registerLocaleData(localePt);
 @NgModule({
   declarations: [
     AppComponent,
